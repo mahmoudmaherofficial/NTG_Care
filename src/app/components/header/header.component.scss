@@ -1,0 +1,65 @@
+header {
+  font-family: "OpenSans";
+  padding: 15px 0;
+  background-color: var(--white);
+  .container {
+    .logo {
+      color: var(--red);
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 26px;
+        margin-left: 10px;
+      }
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+      }
+    }
+    ul.links {
+      li {
+        a {
+          padding: 10px 15px;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: var(--light-blue);
+          font-weight: 500;
+          border-radius: 10px;
+          transition: background 0.3s, color 0.3s;
+          &:hover {
+            background-color: var(--light-blue);
+            color: var(--white);
+          }
+        }
+        .active {
+          background-color: var(--light-blue);
+          color: var(--white);
+          position: relative;
+        }
+        .active::after {
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          font-size: 28px;
+          content: "\e05c";
+          position: absolute;
+          bottom: -21px;
+          color: var(--light-blue);
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        display: none;
+        @media (min-width: 992px) {
+          display: block;
+        }
+      }
+    }
+    i#burger {
+      color: var(--light-blue);
+      font-size: 26px;
+      display: none;
+      @media (max-width: 991px) {
+        display: block;
+      }
+    }
+  }
+}

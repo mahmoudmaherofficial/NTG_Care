@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "OpenSans";
+  src: url(/fonts/OpenSans-VariableFont.ttf);
+}
+
+:root {
+  --red: #ed1b24; // Main Color
+  --dark-blue: #23408e; // Secondary
+  --light-blue: #385399; // Third
+  --grey: #cccccc; // For Background
+  --white: #fff;
+}
