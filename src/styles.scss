@@ -19,7 +19,7 @@ h3.main-heading {
   color: var(--dark-blue);
   position: relative;
   width: fit-content;
-  margin: auto;
+  margin: 0 auto 60px;
   &::before {
     content: "";
     width: 100%;
@@ -32,11 +32,57 @@ h3.main-heading {
   &::after {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    content: "\e05c";
+    content: "\f004";
+    font-size: 24px;
     position: absolute;
-    bottom: -43px;
+    bottom: -23px;
     left: 50%;
     transform: translateX(-50%);
     color: var(--red);
+  }
+}
+
+button.main-btn {
+  border: 2px solid var(--light-blue);
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: transparent;
+  position: relative;
+  border-radius: 10px;
+  color: var(--light-blue);
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: 500;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #38539991;
+    z-index: -1;
+    transition: 0.3s;
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #385399;
+    z-index: -1;
+    transition: 0.7s;
+  }
+  &:hover {
+    color: var(--white);
+  }
+  &:hover::before {
+    top: 0;
+  }
+  &:hover::after {
+    top: 0;
   }
 }

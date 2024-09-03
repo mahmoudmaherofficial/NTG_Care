@@ -1,0 +1,22 @@
+section {
+  background-color: var(--var);
+  padding: 80px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:767px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    .text {
+      flex-basis: 50%;
+    }
+    .image {
+      height: 500px;
+      // overflow: hidden;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}

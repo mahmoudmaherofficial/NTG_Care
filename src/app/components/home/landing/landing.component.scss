@@ -1,7 +1,7 @@
 section {
   // background-image: url(https://placehold.co/2000x1000);
   background-image: url(/imgs/landing.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 800px;
@@ -24,11 +24,15 @@ section {
       color: var(--white);
       font-size: 50px;
       font-weight: 900;
+      @media (max-width: 767px) {
+        font-size: 38px;
+      }
     }
     p {
       color: var(--white);
       letter-spacing: 1px;
       line-height: 2;
+      text-align: center;
     }
   }
 }
