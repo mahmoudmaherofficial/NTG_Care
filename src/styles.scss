@@ -10,3 +10,33 @@
   --grey: #cccccc; // For Background
   --white: #fff;
 }
+
+// Main Heading
+
+h3.main-heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--dark-blue);
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  &::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--red);
+  }
+  &::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\e05c";
+    position: absolute;
+    bottom: -43px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--red);
+  }
+}

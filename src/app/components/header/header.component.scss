@@ -40,8 +40,8 @@ header {
         .active::after {
           font-family: "Font Awesome 6 Free";
           font-weight: 900;
-          font-size: 28px;
           content: "\e05c";
+          font-size: 28px;
           position: absolute;
           bottom: -21px;
           color: var(--light-blue);
