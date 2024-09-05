@@ -4,7 +4,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 800px;
+  min-height: calc(100vh - 77px);
   position: relative;
   &::before {
     content: "";
@@ -17,7 +17,7 @@ section {
     height: 100%;
   }
   .container {
-    height: 800px;
+    height: calc(100vh - 77px);
     flex-direction: column;
     position: relative;
     h2 {

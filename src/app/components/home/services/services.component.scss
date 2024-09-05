@@ -48,7 +48,8 @@ section {
             border-radius: 50%;
           }
           &:hover::before{
-            scale: 2;
+            scale: 1;
+            border-radius: 0;
           }
           &:hover {
             scale: 1.03;
