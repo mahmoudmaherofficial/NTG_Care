@@ -3,7 +3,7 @@ import { LandingComponent } from './landing/landing.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from "./footer/footer.component";
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-home',
