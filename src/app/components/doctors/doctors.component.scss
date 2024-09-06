@@ -1,79 +1,27 @@
-h1 {
-  text-align: center;
-  padding: 30px;
-  font-weight: bold;
-  color: #385399;
-}
-
-.navbar {
-  background-color: #f8f9fa;
-  text-align: center;
-}
-
-.form-inline {
-  margin: auto;
-  .form-control {
-    justify-content: center;
-    font-size: 1rem; // Increase font size of input
-    padding: 0.5rem; // Increase padding inside the input
-    border-color: #007bff; // Change border color to blue
-    color: #385399; // Change text color inside the input to blue
+section {
+  nav {
+    background-color: var(--grey);
+    padding: 80px 0 30px;
     text-align: center;
-  }
-  .form-control {
-    width: 400px;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    border-color: #007bff;
-    color: #000000;
-  }
-
-  .btn-outline-success {
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-    border-color: #385399;
-    color: #385399;
-    &:hover {
-      background-color: #385399;
-      color: #fff;
+    margin-bottom: 30px;
+    input {
+      width: 400px;
+      margin: 0 auto 20px;
+      padding: 5px 10px;
+      color: var(--light-blue);
+      font-size: 22px;
+      &:focus {
+        outline: 1px solid var(--dark-blue);
+        outline: none;
+        box-shadow: 0 0 5px var(--dark-blue);
+        border: 1px solid var(--dark-blue);
+      }
     }
-  }
-}
-
-.card {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px #eee;
-  transition: transform 0.3s ease;
-  padding: 30px;
-  width: 500px;
-  margin: auto;
-  width: 50%;
-  border: 1px solid #007bff;
-  padding: 10px;
-
-  &:hover {
-    transform: scale(0.97);
-  }
-
-  .card-body {
-    padding: 30px;
-
-    .meta-date {
-      font-size: 0.8em;
-      color: #888;
-    }
-
-    .card-title {
-      font-size: 1.5em;
-      margin: 10px 0;
-      color: #ed1b24;
-    }
-
-    .card-text {
-      font-size: 1.5em;
-      color: #385399;
+    button {
+      position: relative;
+      z-index: 11;
+      margin: auto;
+      width: fit-content;
     }
   }
 }
