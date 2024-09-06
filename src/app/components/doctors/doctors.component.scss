@@ -24,4 +24,22 @@ section {
       width: fit-content;
     }
   }
+  .container{
+    .row{
+      .card{
+        .card-header{
+          color: var(--dark-blue);
+          font-size: 22px;
+        }
+        .card-title{
+          color: var(--red);
+          letter-spacing: 1px;
+        }
+        button{
+          position: relative;
+          z-index: 11;
+        }
+      }
+    }
+  }
 }
