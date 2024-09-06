@@ -1,14 +1,17 @@
-footer{
+footer {
   height: 77px;
-  .container{
+  .container {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    h3{
+    h3 {
       font-size: 20px;
       letter-spacing: 1px;
-      span{
+      @media (max-width: 767px) {
+        font-size: 18px;
+      }
+      span {
         color: var(--red);
       }
     }
